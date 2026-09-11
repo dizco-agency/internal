@@ -102,6 +102,46 @@
   .eb.y{background:var(--ylt);border-color:#EBD27A;color:var(--navy);border-style:dashed}
   .eng .ar{color:var(--gray);font-size:16px}
   .eng .miss{font-size:12px;font-weight:800;color:var(--red);margin-left:4px}
+  .pools{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .pool{grid-column:span 2;display:flex;align-items:baseline;gap:10px;padding:0 4px 2px}
+  .pool .pn{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .pool .pd{font-size:13px;color:var(--gray)}
+  .pc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:7px}
+  .pc.b{border:2px solid var(--yellow);background:#FFFDF3}
+  .pc .t{font-size:17px;font-weight:800;line-height:1.2}
+  .pc .r{font-size:12.5px;line-height:1.45;color:var(--ink)}
+  .pc .r b{color:var(--navy);font-weight:700}
+  .pc .ex{font-size:12px;color:var(--gray);line-height:1.4}
+  .pc .pr{font-size:12px;font-weight:700;color:var(--gold);background:var(--ylt);border-radius:8px;padding:6px 9px;line-height:1.35}
+  .req{display:grid;grid-template-columns:3fr 2fr;gap:14px;margin-top:16px}
+  .req .lst li{padding:8px 12px;font-size:13.5px}
+  .req .lst li .ic{width:20px;height:20px;font-size:11px}
+  .fwrap{display:grid;grid-template-columns:440px minmax(0,1fr);gap:40px;align-items:center}
+  .fsvg{width:100%}
+  .frows{display:flex;flex-direction:column;gap:14px}
+  .frow{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+  .frow .st{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:8px}
+  .frow ul{margin:10px 0 0 18px;font-size:14px;line-height:1.5;color:var(--ink)}
+  .acc{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .acc.hi{border:2px solid var(--yellow);background:#FFFDF3}
+  .acc-h{width:100%;display:flex;align-items:center;gap:10px;padding:14px 18px;font:inherit;font-size:16px;font-weight:800;color:var(--navy);background:none;border:0;cursor:pointer;text-align:left;line-height:1.25}
+  .acc-h:hover{background:var(--card)}
+  .acc.hi .acc-h:hover{background:#FFF7D6}
+  .acc-h:focus-visible{outline:3px solid rgba(247,198,0,.5);outline-offset:-3px}
+  .acc-h .acc-t{flex:1;min-width:0}
+  .acc-h .chev{width:10px;height:10px;border-right:2px solid var(--gray);border-bottom:2px solid var(--gray);transform:rotate(45deg);transition:transform .2s;flex-shrink:0;margin-right:4px}
+  .acc.open .acc-h .chev{transform:rotate(-135deg);margin-top:5px}
+  .acc-b{display:none;padding:2px 18px 16px;flex-direction:column;gap:8px}
+  .acc.open .acc-b{display:flex}
+  .acc-b .r{font-size:13.5px;line-height:1.5;color:var(--ink)}
+  .acc-b .r b{color:var(--navy);font-weight:700}
+  .acc-b .ex{font-size:12.5px;color:var(--gray);line-height:1.45}
+  .acc-b .pr{font-size:12.5px;font-weight:700;color:var(--gold);background:var(--ylt);border-radius:8px;padding:7px 10px;line-height:1.4}
+  .acc-b .hk{font-size:15px;font-weight:600;color:var(--navy);line-height:1.4;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:4px}
+  .accs{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;align-items:start}
+  .accs .col{display:flex;flex-direction:column;gap:10px}
+  .badge2{display:inline-flex;gap:6px;flex-shrink:0}
+  .badge2 span{font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;letter-spacing:.04em}
   .logo{position:relative;z-index:2;display:inline-flex;align-items:center;justify-content:center;width:92px;height:92px;border-radius:50%;background:var(--yellow);color:var(--navy);font-weight:900;font-size:15px;line-height:1.05;letter-spacing:.08em;text-align:center;margin-bottom:26px;border:4px solid #fff}
   .divi{background:linear-gradient(125deg,#161d4d,#1E2761 60%,#2b3778);color:#fff;text-align:center;overflow:hidden}
   .divi .dk{font-size:18px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--yellow)}
@@ -210,7 +250,7 @@
     .dots{display:none}.counter{display:none}.foot{display:none}
     .sku .nm{min-width:150px;font-size:14px}.sku .g{min-width:70px;font-size:14px}
     .cover .inner{flex-direction:column;align-items:stretch;gap:28px}.chero{width:100%}
-    .keys{grid-template-columns:1fr}.vgrid{grid-template-columns:repeat(3,1fr)}.kvgrid{grid-template-columns:repeat(3,1fr)}.eng .lab{width:100%}
+    .keys{grid-template-columns:1fr}.vgrid{grid-template-columns:repeat(3,1fr)}.fwrap{grid-template-columns:1fr;gap:20px}.fsvg{max-width:420px;margin:0 auto}.pools{grid-template-columns:repeat(2,1fr)}.req{grid-template-columns:1fr}.kvgrid{grid-template-columns:repeat(3,1fr)}.eng .lab{width:100%}
     .appgrid{grid-template-columns:repeat(2,1fr)}.mixrow{flex-direction:column}
     .jars img{height:110px}
   }
@@ -227,7 +267,7 @@
     .sku{gap:10px;padding:10px 12px}.sku .nm{flex:1;min-width:0;font-size:14px}.sku .track{display:none}.sku .g{min-width:auto}
     .tl .row{grid-template-columns:64px 1fr;gap:10px}.tl .y{font-size:15px}.tl .w{font-size:15px}
     .skuDetail{flex-direction:column}.skuimg{width:96px}
-    .vgrid{grid-template-columns:repeat(2,1fr)}.vlbbox{width:94vw}.kvgrid{grid-template-columns:1fr}
+    .vgrid{grid-template-columns:repeat(2,1fr)}.vlbbox{width:94vw}.pools{grid-template-columns:1fr}.pool{grid-column:span 1}.accs{grid-template-columns:1fr}.kvgrid{grid-template-columns:1fr}
     .imglb{padding:16px}.imgwrap{max-width:94vw}.imgwrap img{max-width:94vw;max-height:80vh}
   }
 </style>
@@ -422,13 +462,12 @@
         <li><span class="ic">✕</span><div>Headline campur Inggris, cara pakai di gambar terakhir<small>"Choco Latte Powder", "Classic Herbs, Endless Flavor". Pembeli Shopee scan bahasa Indonesia. Nggak ada gambar "selai biasa vs bubuk".</small></div></li>
       </ul>
     </div>
-    <div class="hl y" style="margin-top:16px;font-size:16px"><b>Rumus gambar 1 yang kita usulkan:</b> headline benefit (ID) + satu angka + bukti (10K+ terjual, 4,9★) + trust (halal, PIRT) + offer. Gambar 2 = cara pakai 3 langkah. Gambar 3 = perbandingan selai biasa vs bubuk. <b>Cek ke klien:</b> logo Badan POM di KV Dry Rub padahal nomornya PIRT; klaim "10 vitamin 2 mineral" di latte butuh dokumen.</div>
     <div class="hint">Klik gambar buat perbesar</div>
     <div class="foot">DIZCO · Lean Lab Onboarding</div>
   </div></section>
 
   <section class="panel" id="p9v"><div class="inner">
-    <div class="mhead"><div class="k">11 · VIDEO</div><div class="t">Enam video wajib tonton, urut 1 sampai 6</div></div>
+    <div class="mhead"><div class="k">11 · VIDEO</div><div class="t">Contoh video produced</div></div>
     <div class="keys">
       <div class="key"><b>Apa ini:</b> selai kacang <b>bubuk</b>. Minyaknya dipres keluar, kalorinya 1/3 selai biasa, lemak 90% lebih rendah.</div>
       <div class="key"><b>Cara pakai:</b> campur air/susu jadi selai, atau langsung sebagai bubuk buat baking, minuman, dan bumbu kacang.</div>
@@ -450,34 +489,79 @@
 
   <section class="panel" id="p10"><div class="inner">
     <div class="mhead"><div class="k">12 · FUNNEL</div><div class="t">Awareness besar, consideration kuat, conversion nempel marketplace</div></div>
-    <div class="fgrid">
-      <div class="fcard"><span class="st s-warn">Besar, tapi lesu</span><div class="t">Awareness</div><div class="big">1,0%</div><div class="sub">reach organik TikTok per video (median 1.472 views dari 142,8K follower)</div><ul><li>Pinned 9,4M · 8,7M · 3,1M views itu masa lalu</li><li>17 dari 63 video terakhir nggak tembus 1.000</li><li>±95 dari 122 video library itu UGC seeding</li></ul></div>
-      <div class="fcard"><span class="st s-ok">Paling kuat</span><div class="t">Consideration</div><div class="big">4,9</div><div class="sub">dari 84,6K penilaian marketplace</div><ul><li>128 video resep, mayoritas MOFU</li><li>Cuma ±20 video ber-VO, padahal VO yang bawa klaim</li><li>Website tanpa harga, 0 review, tanpa capture email/WA</li></ul></div>
-      <div class="fcard"><span class="st s-bad">Nempel marketplace</span><div class="t">Conversion</div><div class="big">7 / 122</div><div class="sub">video yang punya CTA beli</div><ul><li>Hero toko Dry Rub 10K+, hero selai Chocolate 6K+</li><li>Trial PB 2GO Rp35K baru 1K+, belum jadi pesan</li><li>Nol data pelanggan di luar Shopee/Tokopedia</li></ul></div>
+    <div class="fwrap">
+      <div class="fsvg"><svg viewBox="0 0 520 470" width="100%" role="img" aria-label="Corong funnel tiga tingkat: awareness 1,0 persen reach organik, consideration rating 4,9, conversion 7 dari 122 video punya CTA">
+        <g font-family="Inter,sans-serif">
+        <polygon points="0,0 520,0 468,140 52,140" fill="#F2B84B"/>
+        <text x="260" y="44" text-anchor="middle" font-size="13" font-weight="800" letter-spacing="1.5" fill="#633806">AWARENESS</text>
+        <text x="260" y="92" text-anchor="middle" font-size="44" font-weight="900" fill="#1E2761">1,0%</text>
+        <text x="260" y="120" text-anchor="middle" font-size="13" font-weight="600" fill="#633806">reach organik TikTok per video</text>
+        <polygon points="52,150 468,150 416,290 104,290" fill="#8FC85A"/>
+        <text x="260" y="194" text-anchor="middle" font-size="13" font-weight="800" letter-spacing="1.5" fill="#27500A">CONSIDERATION</text>
+        <text x="260" y="242" text-anchor="middle" font-size="44" font-weight="900" fill="#1E2761">4,9</text>
+        <text x="260" y="270" text-anchor="middle" font-size="13" font-weight="600" fill="#27500A">dari 84,6K penilaian marketplace</text>
+        <polygon points="104,300 416,300 364,440 156,440" fill="#F0997B"/>
+        <text x="260" y="344" text-anchor="middle" font-size="13" font-weight="800" letter-spacing="1.5" fill="#712B13">CONVERSION</text>
+        <text x="260" y="392" text-anchor="middle" font-size="44" font-weight="900" fill="#1E2761">7 / 122</text>
+        <text x="260" y="420" text-anchor="middle" font-size="13" font-weight="600" fill="#712B13">video yang punya CTA beli</text>
+        </g>
+      </svg></div>
+      <div class="frows">
+        <div class="frow"><span class="st s-warn">Besar, tapi lesu</span><ul><li>Pinned 9,4M · 8,7M · 3,1M views itu masa lalu; median 63 video terakhir 1.472 views dari 142,8K follower</li><li>17 dari 63 video terakhir nggak tembus 1.000</li><li>±95 dari 122 video library itu UGC seeding</li></ul></div>
+        <div class="frow"><span class="st s-ok">Paling kuat</span><ul><li>128 video resep, mayoritas MOFU</li><li>Cuma ±20 video ber-VO, padahal VO yang bawa klaim</li><li>Website tanpa harga, 0 review, tanpa capture email/WA</li></ul></div>
+        <div class="frow"><span class="st s-bad">Nempel marketplace</span><ul><li>Hero toko Dry Rub 10K+, hero selai Chocolate 6K+</li><li>Trial PB 2GO Rp35K baru 1K+, belum jadi pesan</li><li>Nol data pelanggan di luar Shopee/Tokopedia</li></ul></div>
+      </div>
     </div>
     <div class="foot">DIZCO · Lean Lab Onboarding</div>
   </div></section>
 
   <section class="panel" id="p10a"><div class="inner"><div class="split">
-    <div class="sinfo"><div class="snum">13</div><div class="stitle">Affiliate: dua mesin, nggak nyambung</div>
-      <div class="sdesc"><p>Shopee <b>bayar Komisi XTRA</b> ke siapa pun yang datang. Kreator yang beneran bikin konten bagus malah ngarahin ke <b>official store tanpa link</b>. Hasilnya: konten kreator nggak bisa dilacak ke penjualan, dan affiliator yang dapat komisi nggak pernah dibrief.</p><p>Satu-satunya pintu rekrut: Google Form di bio TikTok. Linktree nggak punya link affiliate sama sekali.</p></div>
-      <div class="hint">Hover kotak buat sumber</div></div>
+    <div class="sinfo"><div class="snum">13</div><div class="stitle">Affiliate: dua mesin yang harus disambung</div>
+      <div class="sdesc"><p>Sekarang ada dua mesin yang jalan sendiri-sendiri. <b>Kreator</b> bikin konten resep yang bagus, tapi penontonnya diarahkan ke toko tanpa jejak siapa yang bawa. <b>Shopee</b> kasih komisi ke affiliator, tapi affiliatornya nggak pernah dibrief soal produk.</p><p>Strateginya satu: <b>kreator terbaik dijadikan affiliate</b>, dibekali brief, dan konten yang terbukti jualan dijadikan iklan. Semua dibayar berdasarkan hasil.</p></div></div>
     <div class="sview">
-      <div class="stats" style="margin-bottom:18px">
-        <div class="stat"><div class="l">Video dengan CTA affiliate</div><div class="v red">0 / 128</div><div class="s">nol "cek keranjang", "link di bio", "kode promo"</div></div>
-        <div class="stat"><div class="l">Komisi XTRA Shopee</div><div class="v green">Semua SKU</div><div class="s">rate-nya cuma kelihatan di seller center</div></div>
-        <div class="stat"><div class="l">Pintu rekrut</div><div class="v amber">1 form</div><div class="s">Google Form di bio TikTok</div></div>
-        <div class="stat"><div class="l">TikTok Shop affiliate</div><div class="v navy">?</div><div class="s">belum bisa dipastikan dari luar</div></div>
+      <div class="eng"><span class="lab">Sekarang</span><span class="eb">Kreator bikin konten resep</span><span class="ar">→</span><span class="eb dead">penonton diarahkan ke toko, nggak kelacak</span></div>
+      <div class="eng"><span class="lab"></span><span class="eb">Shopee kasih komisi</span><span class="ar">→</span><span class="eb dead">nunggu affiliator datang sendiri</span></div>
+      <div class="eng" style="margin-top:18px"><span class="lab">Tujuan</span><span class="eb y">Kreator terbaik jadi affiliate</span><span class="ar">→</span><span class="eb y">penjualan kelacak per kreator</span><span class="ar">→</span><span class="eb y">konten terbaik jadi iklan</span></div>
+      <div class="cgrid" style="margin-top:22px;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div class="ccard" style="padding:18px 20px;gap:6px"><span class="role r-lead">Prinsip 1</span><div class="t" style="font-size:18px">Bayar per hasil, bukan di depan</div><div class="d">Kreator yang udah terbukti bikin konten kuat diajak jadi affiliate. Biaya ngikutin penjualan.</div></div>
+        <div class="ccard" style="padding:18px 20px;gap:6px"><span class="role r-lead">Prinsip 2</span><div class="t" style="font-size:18px">Satu brief, satu claim sheet</div><div class="d">Semua affiliate pakai angka dan cara pakai yang sama, supaya kontennya akurat dan konsisten.</div></div>
+        <div class="ccard" style="padding:18px 20px;gap:6px"><span class="role r-lead">Prinsip 3</span><div class="t" style="font-size:18px">Satu produk buat coba dulu</div><div class="d">Produk jagoan affiliate adalah yang paling gampang dibeli pertama kali: kemasan kecil, harga masuk.</div></div>
       </div>
-      <div class="eng"><span class="lab">Mesin konten</span><span class="eb" title="±95 dari 122 video library adalah UGC seeding">Seeding kreator</span><span class="ar">→</span><span class="eb" title="Playlist Resep Baking 63, Oats 42, Minuman 27">128 video resep</span><span class="ar">→</span><span class="eb dead" title="Transkrip 128 video: CTA mengarah ke Lean Lab Official Store">CTA ke official store, nol link kreator</span></div>
-      <div class="eng"><span class="lab">Mesin komisi</span><span class="eb" title="Label Komisi XTRA di semua kartu produk screenshot toko">Komisi XTRA di semua SKU</span><span class="ar">→</span><span class="eb dead" title="Tidak ada program rekrut selain form di bio TikTok">nunggu affiliator datang sendiri</span></div>
-      <div class="eng"><span class="lab">Yang belum ada</span><span class="eb y">6 kreator terbukti jadi affiliate</span><span class="ar">→</span><span class="eb y">brief resep + claim sheet</span><span class="ar">→</span><span class="eb y">SKU jagoan: PB 2GO Rp35K, Starter Pack</span><span class="ar">→</span><span class="eb y">whitelist jadi iklan, sales per kreator</span><span class="miss">belum ada</span></div>
-      <div class="hl green" style="margin-top:12px;font-size:14px;padding:16px 20px"><b>Mulai dari:</b> @avitaunaiya, @ignasiareni, @daraanistrimaulida, @26fitria, @sipandapucat, @yuk_dietsehat. Bayar per penjualan, bukan di depan. Cek fitur "Sampel Gratis Komisi XTRA" Shopee dan aktifkan affiliate TikTok Shop dengan tema bulanan "bumbu kacang tanpa goreng & ulek" + CTA keranjang kuning.</div>
     </div>
   </div></div></section>
 
+  <section class="panel" id="p10c"><div class="inner">
+    <div class="mhead" style="margin-bottom:22px"><div class="k">14 · KREATOR AFFILIATE</div><div class="t">Kreator yang cocok: dua pool, empat tipe</div></div>
+    <div class="accs">
+      <div class="col">
+        <div class="pool" style="grid-column:auto"><span class="pn" style="color:var(--gray)">Pool A · Awareness</span><span class="pd">bikin orang penasaran, kejar volume</span></div>
+        <div class="acc"><button class="acc-h" type="button" aria-expanded="false"><span class="acc-t">Home café &amp; baking estetik</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Siapa:</b> perempuan 18–28, konten latte, dessert, croffle, ASMR.</div><div class="r"><b>Kenapa cocok:</b> visual paling kuat; wajah buat Speculoos, Hazelnut, Matcha, dan latte sachet.</div><div class="ex">Udah ada di library: @frcynthia, @jscafejournal, @avitaunaiya, @patricia.cleopatra</div><div class="pr">Catatan: pesan brand sering hilang di konten cantik. Wajib pakai brief.</div></div></div>
+        <div class="acc"><button class="acc-h" type="button" aria-expanded="false"><span class="acc-t">Meal prep &amp; gym</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Siapa:</b> 20–32, dada ayam, meal prep mingguan, hitung protein.</div><div class="r"><b>Kenapa cocok:</b> Dry Rub adalah hero volume toko; angle "7 hari nggak bosen".</div><div class="ex">Udah ada di library: @sipandapucat, @eldisoraya, komunitas iHateDiet</div><div class="pr">Catatan: jual protein per kalori, bukan protein absolut.</div></div></div>
+      </div>
+      <div class="col">
+        <div class="pool" style="grid-column:auto"><span class="pn" style="color:var(--gold)">Pool B · Conversion</span><span class="pd">penontonnya udah nyatet kalori, siap beli</span></div>
+        <div class="acc hi"><button class="acc-h" type="button" aria-expanded="false"><span class="acc-t">Pejuang defisit kalori</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Siapa:</b> perempuan 25–40, menu harian dengan angka kalori, cerita turun berat badan.</div><div class="r"><b>Kenapa cocok:</b> janji inti brand; angka kalori adalah bahasa mereka. Paling deket ke beli.</div><div class="ex">Udah ada di library: @26fitria, @menudietharian, @yuk_dietsehat, @mantanobesitas</div><div class="pr">Produk: Chocolate 250 g, PB 2GO buat coba dulu.</div></div></div>
+        <div class="acc hi"><button class="acc-h" type="button" aria-expanded="false"><span class="acc-t">Ibu masak rumahan &amp; bekal</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Siapa:</b> ibu 28–45, resep praktis, bekal anak, masakan Nusantara.</div><div class="r"><b>Kenapa cocok:</b> bumbu kacang instan dan dry rub masuk masak harian. Segmen besar, belum digarap.</div><div class="ex">Udah ada di library: @adavystory, @ignasiareni, @daraanistrimaulida, @ida.azfar</div><div class="pr">Prioritas rekrut. Produk: Original, Dry Rub, Bumbu Kacang Mix.</div></div></div>
+      </div>
+    </div>
+    <div class="hint">Klik nama tipe buat lihat detailnya</div>
+    <div class="req">
+      <ul class="lst ok">
+        <li><span class="ic">✓</span><div>Produk kelihatan dan nama brand disebut, bukan cuma "selai bubuk"</div></li>
+        <li><span class="ic">✓</span><div>Pakai angka dan cara pakai dari claim sheet, ada CTA ke keranjang sendiri</div></li>
+        <li><span class="ic">✓</span><div>Mau bikin video ber-VO, dan pegang produk minimal 2 minggu sebelum konten</div></li>
+      </ul>
+      <ul class="lst no">
+        <li><span class="ic">✕</span><div>Estetik tanpa produk, atau resep yang nabrak pesan rendah kalori</div></li>
+        <li><span class="ic">✕</span><div>Follower besar tapi penontonnya nggak nyatet kalori: mahal, nggak convert</div></li>
+        <li><span class="ic">✕</span><div>Overclaim: "gak bikin gendut", "efektif buat diet"</div></li>
+      </ul>
+    </div>
+    <div class="foot">DIZCO · Lean Lab Onboarding</div>
+  </div></section>
+
   <section class="panel" id="p11"><div class="inner"><div class="split">
-    <div class="sinfo"><div class="snum">14</div><div class="stitle">Konten mereka numpuk di product-aware</div>
+    <div class="sinfo"><div class="snum">15</div><div class="stitle">Konten mereka numpuk di product-aware</div>
       <div class="sdesc"><p>±55% konten ngomong ke orang yang <b>udah kenal</b> Lean Lab. Itu sebabnya reach organik cuma 1%: algoritma nggak punya alasan lempar ke orang baru.</p><p>Aset unaware paling kuat, cerita founder ex-obesitas 100 kg, <b>belum pernah jadi konten</b>.</p></div>
       <div class="hint">Hover bar buat contoh konten</div></div>
     <div class="sview"><div class="chart"><svg id="svgAware" viewBox="0 0 660 300" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Porsi konten per level awareness: unaware 5 persen, problem-aware 10, solution-aware 15, product-aware 55, most-aware 15"></svg></div>
@@ -485,43 +569,33 @@
   </div></div></section>
 
   <section class="panel" id="p12"><div class="inner"><div class="split">
-    <div class="sinfo"><div class="snum">15</div><div class="stitle">Lawan dan harga per gram</div>
+    <div class="sinfo"><div class="snum">16</div><div class="stitle">Lawan dan harga per gram</div>
       <div class="sdesc"><p>Di selai low-cal, Lean Lab <b>paling mahal per gram</b> di antara selai biasa, tapi <b>lebih murah dari Krazy</b>, satu-satunya PB powder lokal lain (Rp66.639/180 g, baru 18 penilaian).</p><p>Krazy nyontek klaim persis: "52–54 kkal", ada varian "Extra Protein". Klaim "pertama di Indonesia" sudah 5 tahun umurnya.</p></div>
       <div class="hint">Hover bar buat detail</div></div>
     <div class="sview"><div class="chart"><svg id="svgComp" viewBox="0 0 660 320" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Harga per gram: Tropicana Slim Strawberry 217, Melts 230, Tropicana Slim Chocolate 300, NUDE 309, Lean Lab Chocolate 336, Krazy 370 rupiah per gram"></svg></div></div>
   </div></div></section>
 
   <section class="panel" id="p13"><div class="inner">
-    <div class="mhead"><div class="k">16 · ANGLE</div><div class="t">Delapan angle, tiga yang paling deket duit</div></div>
-    <div class="agrid">
-      <div class="acard p1"><div class="pr"><span style="background:#1E2761;color:#F7C600">P1</span><span style="background:#FAEEDA;color:#633806">Problem-aware</span></div><div class="t">Bumbu kacang instan, tanpa goreng tanpa ulek</div><div class="m">1/3PB Original, Bumbu Kacang Mix · ibu rumah tangga, anak kos, pejuang diet. Moat lokal, PB powder impor nggak bisa ikut.</div><div class="hk">"Gado-gado 5 menit. Bumbunya tinggal seduh, kalorinya cuma 50."</div></div>
-      <div class="acard p1"><div class="pr"><span style="background:#1E2761;color:#F7C600">P1</span><span style="background:#FAEEDA;color:#633806">Problem-aware</span></div><div class="t">Dada ayam 7 hari nggak bosen</div><div class="m">Dry Rub 3 varian · gym, meal prep, defisit kalori. Hero volume, 10K+ per varian, sachet Rp18K.</div><div class="hk">"Meal prep seminggu, satu botol, 15 kalori per masak."</div></div>
-      <div class="acard p1"><div class="pr"><span style="background:#1E2761;color:#F7C600">P1</span><span style="background:#E1F5EE;color:#085041">Solution-aware</span></div><div class="t">Selai coklat 25 kalori per sendok</div><div class="m">Chocolate, Hazelnut, Speculoos · sweet tooth yang lagi diet, 20–35 th. Chocolate 6K+, kolab Chicco.</div><div class="hk">"Selai coklat 25 kalori per sendok. Iya, per sendok."</div></div>
-      <div class="acard"><div class="pr"><span style="background:#EEF1F6;color:#444441">P2</span><span style="background:#EAE8FB;color:#3C3489">Product-aware</span></div><div class="t">Coba 5 rasa dulu, Rp35 ribu</div><div class="m">PB 2GO, Sachet Pack · traffic dingin yang ragu format bubuk. Offer BOFU-nya.</div><div class="hk">"Cobain 5 rasa selai bubuk. Rp35 ribu, gratis ongkir."</div></div>
-      <div class="acard"><div class="pr"><span style="background:#EEF1F6;color:#444441">P2</span><span style="background:#E1F5EE;color:#085041">Solution-aware</span></div><div class="t">Sarapan 3 langkah, kalori kehitung</div><div class="m">Oats sachet + 1/3PB + latte · pekerja kantoran. Bundle lintas kategori, jalur naik AOV.</div><div class="hk">"Sarapan 250 kalori. 3 langkah, 5 menit."</div></div>
-      <div class="acard"><div class="pr"><span style="background:#EEF1F6;color:#444441">P2</span><span style="background:#E1F5EE;color:#085041">Solution-aware</span></div><div class="t">Latte ala kafe tanpa sirup</div><div class="m">Matcha Latte sachet, Speculoos/Hazelnut/Matcha PB · home café, perempuan 18–30.</div><div class="hk">"Speculoos latte ala kafe. 60 kalori, Rp9 ribu."</div></div>
-      <div class="acard"><div class="pr"><span style="background:#EEF1F6;color:#444441">P3</span><span style="background:#FBE3DA;color:#8C3A1F">Unaware</span></div><div class="t">Bekal anak manis, bundanya tenang</div><div class="m">Chocolate, Hazelnut + sate buah · ibu anak SD. Cuma 2 video, perlu tes.</div><div class="hk">"Cocolan coklat buat bekal. Rendah gula, ada proteinnya."</div></div>
-      <div class="acard"><div class="pr"><span style="background:#EEF1F6;color:#444441">P3</span><span style="background:#EAE8FB;color:#3C3489">Product-aware</span></div><div class="t">Kue Lebaran kalorinya sepertiga</div><div class="m">Original, Chocolate · baking rumahan. Musiman Ramadan–Lebaran, siapkan dari Januari.</div><div class="hk">"Kue kacang jadul, kalorinya sepertiga."</div></div>
+    <div class="mhead"><div class="k">17 · ANGLE</div><div class="t">Delapan angle yang bisa diexplore, tiga yang potential</div></div>
+    <div class="accs">
+      <div class="col">
+        <div class="acc hi"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#1E2761;color:#F7C600">P1</span><span style="background:#FAEEDA;color:#633806">Problem-aware</span></span><span class="acc-t">Bumbu kacang instan, tanpa goreng tanpa ulek</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> 1/3PB Original, Bumbu Kacang Mix</div><div class="r"><b>Target:</b> ibu rumah tangga, anak kos, pejuang diet</div><div class="r"><b>Kenapa:</b> moat lokal, PB powder impor nggak bisa ikut</div><div class="hk">"Gado-gado 5 menit. Bumbunya tinggal seduh, kalorinya cuma 50."</div></div></div>
+        <div class="acc hi"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#1E2761;color:#F7C600">P1</span><span style="background:#FAEEDA;color:#633806">Problem-aware</span></span><span class="acc-t">Dada ayam 7 hari nggak bosen</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> Dry Rub 3 varian</div><div class="r"><b>Target:</b> gym, meal prep, defisit kalori</div><div class="r"><b>Kenapa:</b> hero volume toko, 10K+ per varian, sachet Rp18K buat masuk</div><div class="hk">"Meal prep seminggu, satu botol, 15 kalori per masak."</div></div></div>
+        <div class="acc hi"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#1E2761;color:#F7C600">P1</span><span style="background:#E1F5EE;color:#085041">Solution-aware</span></span><span class="acc-t">Selai coklat 25 kalori per sendok</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> Chocolate, Hazelnut, Speculoos</div><div class="r"><b>Target:</b> sweet tooth yang lagi diet, 20–35 tahun</div><div class="r"><b>Kenapa:</b> Chocolate 6K+ terjual, kolab Chicco Jerikho</div><div class="hk">"Selai coklat 25 kalori per sendok. Iya, per sendok."</div></div></div>
+        <div class="acc"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#EEF1F6;color:#444441">P2</span><span style="background:#EAE8FB;color:#3C3489">Product-aware</span></span><span class="acc-t">Coba 5 rasa dulu, Rp35 ribu</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> PB 2GO, Sachet Pack</div><div class="r"><b>Target:</b> traffic dingin yang ragu sama format bubuk</div><div class="r"><b>Kenapa:</b> ini offer BOFU-nya, risiko coba paling kecil</div><div class="hk">"Cobain 5 rasa selai bubuk. Rp35 ribu, gratis ongkir."</div></div></div>
+      </div>
+      <div class="col">
+        <div class="acc"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#EEF1F6;color:#444441">P2</span><span style="background:#E1F5EE;color:#085041">Solution-aware</span></span><span class="acc-t">Sarapan 3 langkah, kalori kehitung</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> Oats sachet + 1/3PB + latte</div><div class="r"><b>Target:</b> pekerja kantoran</div><div class="r"><b>Kenapa:</b> bundle lintas kategori, jalur naik AOV</div><div class="hk">"Sarapan 250 kalori. 3 langkah, 5 menit."</div></div></div>
+        <div class="acc"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#EEF1F6;color:#444441">P2</span><span style="background:#E1F5EE;color:#085041">Solution-aware</span></span><span class="acc-t">Latte ala kafe tanpa sirup</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> Matcha Latte sachet, Speculoos/Hazelnut/Matcha PB</div><div class="r"><b>Target:</b> home café, perempuan 18–30</div><div class="r"><b>Kenapa:</b> visual paling kuat, harga masuk paling murah</div><div class="hk">"Speculoos latte ala kafe. 60 kalori, Rp9 ribu."</div></div></div>
+        <div class="acc"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#EEF1F6;color:#444441">P3</span><span style="background:#FBE3DA;color:#8C3A1F">Unaware</span></span><span class="acc-t">Bekal anak manis, bundanya tenang</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> Chocolate, Hazelnut + sate buah</div><div class="r"><b>Target:</b> ibu anak SD</div><div class="r"><b>Kenapa:</b> segmen besar, baru 2 video, perlu dites dulu</div><div class="hk">"Cocolan coklat buat bekal. Rendah gula, ada proteinnya."</div></div></div>
+        <div class="acc"><button class="acc-h" type="button" aria-expanded="false"><span class="badge2"><span style="background:#EEF1F6;color:#444441">P3</span><span style="background:#EAE8FB;color:#3C3489">Product-aware</span></span><span class="acc-t">Kue Lebaran kalorinya sepertiga</span><span class="chev"></span></button><div class="acc-b"><div class="r"><b>Produk:</b> Original, Chocolate</div><div class="r"><b>Target:</b> baking rumahan</div><div class="r"><b>Kenapa:</b> musiman Ramadan–Lebaran, siapkan dari Januari</div><div class="hk">"Kue kacang jadul, kalorinya sepertiga."</div></div></div>
+      </div>
     </div>
+    <div class="hint">Klik angle buat lihat produk, target, dan hook-nya</div>
     <div class="foot">DIZCO · Lean Lab Onboarding</div>
   </div></section>
 
-  <section class="panel" id="p14"><div class="inner">
-    <div class="mhead"><div class="k">17 · MULAI DARI MANA</div><div class="t">Yang belum kita pegang, dan yang harus ditanya ke klien</div></div>
-    <div class="two">
-      <div class="hl red"><b>Belum kita punya:</b><br>HPP per SKU (tanpa ini nggak bisa hitung CPA maksimal) · ads spend dan ROAS per channel · GMV TikTok Shop dan affiliate · hak whitelisting video kreator · status Matcha, Hazelnut, dan Bumbu Kacang Mix (SKU permanen atau bukan) · rate Komisi XTRA, jumlah affiliate aktif, dan GMV affiliate vs total toko · affiliate TikTok Shop aktif atau belum.</div>
-      <div class="hl green"><b>Usulan offer dari SKU yang sudah ada:</b><br>Order bump Dry Rub sachet Rp18K ke setiap pembeli selai · OTO upgrade 250 g ke Starter Pack Rp159K · pembeli Dry Rub: bump Bumbu Kacang Mix, OTO Triple Bundle Rp145K. Nol produk baru.</div>
-    </div>
-    <div class="stats" style="margin-top:22px">
-      <div class="stat"><div class="l">Nama baku produk</div><div class="v navy" style="font-size:22px">1/3PB atau Selai Kacang Bubuk?</div></div>
-      <div class="stat"><div class="l">Prioritas iklan</div><div class="v navy" style="font-size:22px">1/3PB atau Dry Rub?</div></div>
-      <div class="stat"><div class="l">Founder on-cam</div><div class="v navy" style="font-size:22px">Mau nggak?</div></div>
-      <div class="stat"><div class="l">Rasio resmi</div><div class="v navy" style="font-size:22px">2:1,5 atau 1:1?</div></div>
-    </div>
-    <div class="foot">DIZCO · Lean Lab Onboarding</div>
-  </div></section>
 
-  <section class="panel divi" id="pend"><div class="inner"><div class="dk">Ringkasan satu kalimat</div><div class="dt" style="font-size:44px;max-width:1100px;margin:14px auto 0;line-height:1.2">Mereka jago bikin bukti, belum pernah bikin sistem. Tugas kita: satu pesan baku, satu tangga offer, satu mesin awareness yang bisa diulang.</div><div class="ds">Sumber: leanlab.co.id, Shopee Mall &amp; Tokopedia Official Store, TikTok @leanlab.id, katalog produk Lean Lab, KB DIZCO (128 video Leanlab Recipes), kumparan, Liputan6, espos.id, Selular · diakses 11 Sep 2026</div></div></section>
 
 </div>
 
@@ -537,7 +611,7 @@
 </div>
 
 <div class="dots" id="dots"></div>
-<div class="counter" id="counter">1 / 21</div>
+<div class="counter" id="counter">1 / 20</div>
 
 <script>
 var NS='http://www.w3.org/2000/svg';
@@ -667,6 +741,9 @@ hbars('svgAware',[
 window.openVid=function(id,cap){var f=document.getElementById('vlbframe');if(!f)return;f.src='https://drive.google.com/file/d/'+id+'/preview';document.getElementById('vlbcap').textContent=cap||'';document.getElementById('vlblink').href='https://drive.google.com/file/d/'+id+'/view';document.getElementById('vlb').classList.add('open');};
 window.closeVid=function(){var v=document.getElementById('vlb');if(!v)return;v.classList.remove('open');document.getElementById('vlbframe').src='';};
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVid();});
+
+// accordion: satu terbuka per slide
+document.querySelectorAll('.acc-h').forEach(function(h){h.addEventListener('click',function(){var acc=h.parentNode,was=acc.classList.contains('open'),scope=acc.closest('.accs')||document;scope.querySelectorAll('.acc.open').forEach(function(o){o.classList.remove('open');o.querySelector('.acc-h').setAttribute('aria-expanded','false');});if(!was){acc.classList.add('open');h.setAttribute('aria-expanded','true');}});});
 
 // image lightbox: click to zoom 1.6x toward click point, drag to pan, Esc/backdrop to close
 (function(){
