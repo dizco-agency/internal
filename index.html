@@ -14,15 +14,17 @@
   .wordmark{font-size:22px;font-weight:900;letter-spacing:-.02em}
   .wordmark span{color:var(--orange)}
   .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#B9BDC7}
-  main{flex:1;display:flex;align-items:center;justify-content:center;padding:56px 24px}
-  .card{width:100%;max-width:560px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px 38px;display:flex;flex-direction:column;gap:18px;box-shadow:0 16px 40px rgba(20,22,28,.08)}
+  main{flex:1;display:flex;align-items:flex-start;justify-content:center;padding:56px 24px}
+  .grid{width:100%;max-width:1160px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px;align-items:stretch}
+  .card{width:100%;background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px 38px;display:flex;flex-direction:column;gap:18px;box-shadow:0 16px 40px rgba(20,22,28,.08)}
   .top{display:flex;align-items:center;gap:16px}
   .logo{width:60px;height:60px;border-radius:50%;background:#F7C600;color:var(--navy);font-weight:900;font-size:11px;line-height:1.05;letter-spacing:.06em;display:flex;align-items:center;justify-content:center;text-align:center;flex-shrink:0}
+  .logo.guide{background:var(--navy);color:#fff}
   .name{font-size:26px;font-weight:900;letter-spacing:-.01em;color:var(--navy)}
   .sub{font-size:14px;color:var(--gray);font-weight:500;margin-top:3px;line-height:1.4}
-  .desc{font-size:16px;color:var(--ink);line-height:1.65;display:flex;flex-direction:column;gap:14px}
+  .desc{font-size:16px;color:var(--ink);line-height:1.65;display:flex;flex-direction:column;gap:14px;flex:1}
   .desc p{margin:0}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:16px;font-weight:700;border-radius:999px;padding:14px 24px;background:var(--orange);color:#fff;transition:.15s;margin-top:6px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:16px;font-weight:700;border-radius:999px;padding:14px 24px;background:var(--orange);color:#fff;transition:.15s;margin-top:6px;align-self:flex-start}
   .btn:hover{background:#d95a12}
   .btn:focus-visible{outline:3px solid rgba(242,107,29,.35);outline-offset:2px}
   footer{padding:18px 40px;font-size:12px;color:var(--gray);text-align:center}
@@ -42,22 +44,41 @@
 </header>
 
 <main>
-  <section class="card">
-    <div class="top">
-      <div class="logo">LEAN<br>LAB</div>
-      <div>
-        <div class="name">Lean Lab</div>
-        <div class="sub">leanlab.id · selai kacang bubuk, dry rub, minuman, sarapan</div>
+  <div class="grid">
+    <section class="card">
+      <div class="top">
+        <div class="logo">LEAN<br>LAB</div>
+        <div>
+          <div class="name">Lean Lab</div>
+          <div class="sub">leanlab.id · selai kacang bubuk, dry rub, minuman, sarapan</div>
+        </div>
       </div>
-    </div>
-    <div class="desc">
-      <p>Lean Lab itu brand makanan rendah kalori dari Bali.</p>
-      <p>Produk utamanya selai kacang bubuk: tinggal dicampur air atau susu, kalorinya sepertiga selai kacang biasa.</p>
-      <p>Selain itu ada bumbu dry rub, latte sachet, granola, dan oats.</p>
-      <p>Deck ini ngejelasin apa produknya, siapa pembelinya, dan angle yang kita bawa.</p>
-    </div>
-    <a class="btn" href="leanlabOnboarding.html">Buka deck Lean Lab →</a>
-  </section>
+      <div class="desc">
+        <p>Lean Lab itu brand makanan rendah kalori dari Bali.</p>
+        <p>Produk utamanya selai kacang bubuk: tinggal dicampur air atau susu, kalorinya sepertiga selai kacang biasa.</p>
+        <p>Selain itu ada bumbu dry rub, latte sachet, granola, dan oats.</p>
+        <p>Deck ini ngejelasin apa produknya, siapa pembelinya, dan angle yang kita bawa.</p>
+      </div>
+      <a class="btn" href="leanlabOnboarding.html">Buka deck Lean Lab →</a>
+    </section>
+
+    <section class="card">
+      <div class="top">
+        <div class="logo guide">INPUT<br>HARIAN</div>
+        <div>
+          <div class="name">Panduan Input Harian</div>
+          <div class="sub">DIZCO Performance Report · Shopee, TikTok Shop, Meta Ads</div>
+        </div>
+      </div>
+      <div class="desc">
+        <p>Panduan buat admin yang ngisi report harian tiap pagi.</p>
+        <p>Satu halaman satu langkah: ambil angka dari seller center atau Ads Manager, lalu isi ke kolom yang disorot di sheet.</p>
+        <p>Urutannya beresin Shopee dulu (toko, Shopee Ads, Meta CPAS, Meta LP), baru TikTok, lalu channel lainnya.</p>
+        <p>11 langkah, ±10 menit per hari.</p>
+      </div>
+      <a class="btn" href="panduan.html">Buka panduan →</a>
+    </section>
+  </div>
 </main>
 
 <footer>DIZCO · internal, jangan dibagikan ke luar tim</footer>
